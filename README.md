@@ -34,12 +34,12 @@ yao-site/
 
 | 想改的内容 | 位置 |
 |---|---|
-| 姓名、首屏标语、学校班级 | `index.html` 中的 “首屏” 部分（`<section class="hero">`） |
-| 自我介绍、专业信息卡 | `index.html` 中的 “关于” 部分（`id="about"`） |
-| 钢琴之路时间线 | `index.html` 中的 `<ol class="timeline">`，每个 `<li>` 是一个节点 |
+| 姓名、首屏标语 | `index.html` 中的 “首屏” 部分（`<section class="hero">`） |
+| 题记、信息栏 | `index.html` 中的 “题记” 部分（`id="about"`） |
+| 年表 | `index.html` 中的 `<ol class="timeline">`，每个 `<li>` 是一个节点 |
 | 曲目卡片 | `index.html` 中的 `<div class="cards">`，每个 `<article class="card">` 是一首曲目 |
-| 艺术随笔 | `index.html` 中的 `id="essays"` 部分 |
-| 联系邮箱 | `index.html` 中的 `mailto:yaotiansheng@example.com`（**这是占位邮箱，请改成真实邮箱**） |
+| 札记 | `index.html` 中的 `id="essays"` 部分 |
+| 联系邮箱、学校班级（页脚） | `index.html` 中的 `mailto:yaotiansheng@example.com`（**这是占位邮箱，请改成真实邮箱**） |
 | 配色 | `css/style.css` 顶部的 `:root` 变量（`--ink` 墨黑、`--ivory` 象牙白、`--gold` 暗金） |
 | 试弹曲目 | `js/main.js` 中的 `SONGS`，格式为 `[MIDI 音高, 拍数]`，60 = 中央 C |
 | AI 乐思的心境、调式、诗句 | `js/main.js` 中的 `MOODS` |
@@ -57,4 +57,4 @@ yao-site/
 
 ## 七、说明
 
-网站中的个人经历、随笔和曲目心得都是示例文字，请按真实情况修改。网站没有虚构任何奖项或比赛成绩。
+网站中的年表、札记和曲目短评都是示例文字（年表中除 2025 入学外的时间点为占位），请按真实情况修改。网站没有虚构任何奖项或比赛成绩。

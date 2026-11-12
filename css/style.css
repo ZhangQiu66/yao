@@ -128,7 +128,7 @@ em{font-family:var(--serif-en);font-style:italic}
 /* ---------- 时间线 ---------- */
 .timeline{list-style:none;margin:0;padding:0;position:relative}
 .timeline::before{content:"";position:absolute;left:calc(11rem + 1px);top:.6rem;bottom:.6rem;width:1px;background:linear-gradient(var(--gold),var(--line) 30%,var(--line) 70%,transparent)}
-.tl{display:grid;grid-template-columns:11rem 1fr;gap:3.5rem;padding:2.2rem 0;position:relative}
+.tl{display:grid;grid-template-columns:11rem 1fr;gap:3.5rem;padding:1.8rem 0;position:relative}
 .tl::before{content:"";position:absolute;left:calc(11rem - 4px);top:3.05rem;width:11px;height:11px;border:1px solid var(--gold);background:var(--ink);transform:rotate(45deg);transition:background .4s}
 .tl:hover::before{background:var(--gold)}
 .tl__mark{font-family:var(--serif-en);font-style:italic;font-size:1.6rem;color:var(--gold-2);text-align:right;padding-right:1rem;line-height:1.6}
@@ -318,3 +318,5 @@ kbd{display:inline-block;min-width:1.7em;text-align:center;font-family:var(--ser
 .muse__staff .nh--h.on{fill:none;stroke:#fff}
 .muse__staff .meter{font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;font-weight:500;fill:rgba(236,228,214,.75)}
 @media (hover:none){.hint-keys{display:none}}
+.tl__mark small{display:block;font-size:.85rem;letter-spacing:.14em;color:var(--muted);line-height:1.4}
+@media (max-width:900px){.tl__mark small{display:inline;margin-left:.8em}}
