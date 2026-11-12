@@ -1,5 +1,5 @@
 /* =========================================================
-   姚天生 · Piano & Art — 样式表
+   姚 · Piano & Art — 样式表
    调色：墨黑 / 象牙白 / 暗金
    ========================================================= */
 :root{
@@ -77,12 +77,17 @@ em{font-family:var(--serif-en);font-style:italic}
 .hero__inner{position:relative;z-index:2;max-width:var(--maxw);width:100%;margin:0 auto}
 .hero__eyebrow{display:flex;align-items:center;gap:1rem;font-family:var(--serif-en);font-style:italic;font-size:15px;letter-spacing:.18em;color:var(--gold);margin-bottom:2.2rem}
 .hero__eyebrow .line{width:56px;height:1px;background:var(--gold)}
-.hero__title{display:flex;flex-direction:column;gap:.4rem;margin-bottom:2.4rem}
-.hero__cn{font-size:clamp(4.2rem,13vw,11.5rem);line-height:1;letter-spacing:.18em;font-weight:300;
-  background:linear-gradient(180deg,var(--ivory-2) 30%,#b7ad9c);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero__cn span{-webkit-text-fill-color:transparent;background:linear-gradient(180deg,var(--gold-2),var(--gold) 70%);-webkit-background-clip:text;background-clip:text}
-.hero__en{font-family:var(--serif-en);font-size:clamp(1.6rem,3.4vw,3rem);font-weight:300;letter-spacing:.08em;color:rgba(236,228,214,.8);padding-left:.3em}
-.hero__en em{color:var(--gold-2)}
+.hero__title{display:flex;align-items:flex-end;gap:clamp(1.5rem,4vw,3.5rem);margin-bottom:2.6rem}
+.hero__cn{position:relative;font-size:clamp(9rem,21vw,17rem);line-height:.92;font-weight:300;padding:.06em .1em .1em;
+  background:linear-gradient(170deg,var(--gold-2) 0%,var(--gold) 45%,#7d6640 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero__cn::before,.hero__cn::after{content:"";position:absolute;width:.16em;height:.16em;border:1px solid rgba(194,165,110,.55)}
+.hero__cn::before{left:0;top:0;border-right:0;border-bottom:0}
+.hero__cn::after{right:0;bottom:0;border-left:0;border-top:0}
+.hero__mono{display:flex;flex-direction:column;gap:.9rem;padding-bottom:1.4em}
+.hero__rule{width:72px;height:1px;background:var(--gold)}
+.hero__en{font-family:var(--serif-en);font-size:clamp(2.2rem,4.6vw,4rem);font-weight:300;line-height:1;letter-spacing:.06em;color:var(--ivory)}
+.hero__en em{color:var(--ivory-2)}
+.hero__meta{font-family:var(--serif-en);font-style:italic;font-size:15px;letter-spacing:.2em;color:var(--muted)}
 .hero__tagline{font-size:clamp(1.15rem,2vw,1.6rem);letter-spacing:.3em;line-height:1.8;margin-bottom:.8rem;color:var(--ivory)}
 .hero__sub{font-size:13px;letter-spacing:.35em;color:var(--muted);margin-bottom:3rem}
 .hero__actions{display:flex;gap:1rem;flex-wrap:wrap}
@@ -243,6 +248,8 @@ kbd{display:inline-block;min-width:1.7em;text-align:center;font-family:var(--ser
 .contact__mail{display:inline-block;font-family:var(--serif-en);font-style:italic;font-size:clamp(1.3rem,3vw,2.2rem);letter-spacing:.04em;padding-bottom:.3rem;
   background:linear-gradient(var(--gold),var(--gold)) left bottom/0 1px no-repeat,linear-gradient(var(--line-strong),var(--line-strong)) left bottom/100% 1px no-repeat;transition:background-size .7s var(--ease),color .4s;word-break:break-all}
 .contact__mail:hover{background-size:100% 1px,100% 1px;color:var(--gold-2)}
+.contact__line{font-size:clamp(1.1rem,2.2vw,1.5rem);letter-spacing:.3em;color:rgba(236,228,214,.8);margin:0}
+.contact__line em{color:var(--gold-2);letter-spacing:.08em;margin-right:.3em}
 .contact__links{list-style:none;padding:0;margin:3.5rem 0 0;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
 .contact__links li{padding:1.4rem .8rem;font-size:14px;letter-spacing:.1em;color:rgba(236,228,214,.75);border-bottom:1px solid var(--line)}
 .contact__links li + li{border-left:1px solid var(--line)}
@@ -288,7 +295,9 @@ kbd{display:inline-block;min-width:1.7em;text-align:center;font-family:var(--ser
   body{font-size:15px}
   .m-br{display:inline}
   .hero{padding-top:7rem;padding-bottom:9rem;align-items:flex-end}
-  .hero__cn{letter-spacing:.1em}
+  .hero__cn{font-size:8.5rem}
+  .hero__mono{padding-bottom:1em;gap:.6rem}
+  .hero__meta{font-size:12px;letter-spacing:.14em}
   .hero__tagline{letter-spacing:.18em}
   .hero__sub{letter-spacing:.2em;font-size:12px}
   .hero__scroll{display:none}

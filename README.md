@@ -1,8 +1,8 @@
-# 姚天生 · 琴与画 —— 个人网站
+# 姚 · 琴与画 —— 作品集网站
 
 钢琴与艺术主题的个人网站，纯静态，不需要构建，也不需要后端。
 
-设计者：姚天生（山东理工大学 · 音乐教育 · 音教 2503）
+设计者：姚
 
 ## 一、如何打开
 
@@ -17,7 +17,7 @@
 
 - **GitHub Pages**：新建仓库上传全部文件，在 Settings → Pages 中选择分支。
 - **Netlify / Vercel / Cloudflare Pages**：把文件夹拖进控制台即可。
-- **学校服务器或云服务器**：放到 Nginx / Apache 的网站根目录。
+- **自有服务器或云服务器**：放到 Nginx / Apache 的网站根目录。
 
 ## 三、目录结构
 
@@ -34,12 +34,12 @@ yao-site/
 
 | 想改的内容 | 位置 |
 |---|---|
-| 姓名、首屏标语 | `index.html` 中的 “首屏” 部分（`<section class="hero">`） |
+| 首屏署名、标语 | `index.html` 中的 “首屏” 部分（`<section class="hero">`） |
 | 题记、信息栏 | `index.html` 中的 “题记” 部分（`id="about"`） |
-| 年表 | `index.html` 中的 `<ol class="timeline">`，每个 `<li>` 是一个节点 |
+| 曲目年表 | `index.html` 中的 `<ol class="timeline">`，每个 `<li>` 是一个节点 |
 | 曲目卡片 | `index.html` 中的 `<div class="cards">`，每个 `<article class="card">` 是一首曲目 |
 | 札记 | `index.html` 中的 `id="essays"` 部分 |
-| 联系邮箱、学校班级（页脚） | `index.html` 中的 `mailto:yaotiansheng@example.com`（**这是占位邮箱，请改成真实邮箱**） |
+| 联络文字 | `index.html` 中的 `id="contact"` 部分（目前不含任何联系方式，如需可自行添加） |
 | 配色 | `css/style.css` 顶部的 `:root` 变量（`--ink` 墨黑、`--ivory` 象牙白、`--gold` 暗金） |
 | 试弹曲目 | `js/main.js` 中的 `SONGS`，格式为 `[MIDI 音高, 拍数]`，60 = 中央 C |
 | AI 乐思的心境、调式、诗句 | `js/main.js` 中的 `MOODS` |
@@ -57,4 +57,4 @@ yao-site/
 
 ## 七、说明
 
-网站中的年表、札记和曲目短评都是示例文字（年表中除 2025 入学外的时间点为占位），请按真实情况修改。网站没有虚构任何奖项或比赛成绩。
+年表中的年份为各曲目的大致创作或出版年代；札记与曲目短评为示例文字，可自行修改。网站不包含任何个人信息或联系方式。网站没有虚构任何奖项或比赛成绩。
